@@ -1,4 +1,5 @@
-function Navbar(){
+function Navbar(page){
+
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-dark">
@@ -11,13 +12,18 @@ function Navbar(){
                         <div className="navbar-nav">
                             <div className="row justify-content-center">
                                 <div className="col-sm-12 col-md-3">
-                                    <a className="nav-link active text-light" aria-current="page" href="#">Home</a>
+                                    {/* <a className="nav-link active text-light" aria-current="page" href="#">Home</a> */}
+                                    <button className="btn text-light" onClick={() => setPage('home')}>Home</button>
                                 </div>
                                 <div className="col-sm-12 col-md-3">
-                                <a className="nav-link text-light" href="#">Menu</a>
+                                {/* <a className="nav-link text-light" href="#">Menu</a> */}
+                                <button className="btn text-light" onClick={() => setPage('menu')}>Menu</button>
+
                                 </div>
                                 <div className="col-sm-12 col-md-3">
-                                <a className="nav-link text-light" href="#">About</a>
+                                {/* <a className="nav-link text-light" href="#">About</a> */}
+                                <button className="btn text-light" onClick={() => setPage('about')}>About</button>
+
                                 </div>
 
                             </div>
