@@ -8,11 +8,11 @@ import './home.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
   <div>
     <Header />
     <App />
   </div>
-  </React.StrictMode>
+  /* </React.StrictMode> */
 );
 // console.log('working')
