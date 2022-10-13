@@ -4,6 +4,7 @@ import React from 'react';
 import axios from "axios";
 import Home from './Home';
 import Menu from './Menu';
+import Navbar from './Navbar';
 
 const APIUrl = "https://astute-baton-362318.ue.r.appspot.com/api/json/?format=json"
 
@@ -31,7 +32,7 @@ const APIUrl = "https://astute-baton-362318.ue.r.appspot.com/api/json/?format=js
 function App() {
     const [data, setData] = useState([]);
 
-    console.log('yes');
+    // console.log('yes');
     useEffect(() => {
         async function getData(){
     await axios.get('https://astute-baton-362318.ue.r.appspot.com/api/json/?format=json')
@@ -46,12 +47,15 @@ function App() {
     const [page, setPage] = useState('home')
     return (
         <>
+            <Navbar />
             {page == 'home' && <Home />}
             {page == 'menu' && <Menu />}
             {page == 'third home' && <h1>3rd HOME</h1>}
             <button onClick={() => setPage('menu')}>CLICK</button>
             {/* {GetData()} */}
-            {console.log(data[0])}
+            {/* {console.log(data[0].title)} */}
+            {/* <h1>{data[0].title}</h1> */}
+
         </>
     )
 }
