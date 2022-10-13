@@ -1,4 +1,12 @@
 .homeJumbotron {
     height: 70vh;
-    background-color: grey;
+    /* background-color: grey; */
+    background-image: url('./images/seafoodpalace.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.specials {
+    height: 80vh;
 }
