@@ -1,15 +1,15 @@
 import { useState } from "react";
 
 
-function Navbar(page){
-// let page = props.page
+function Navbar(props){
+let page = props.page
 
-function theAnswer(){
-    page('')
-}
+// function theAnswer(){
+//     page('')
+// }
 
-    const [page, setPage] = useState('') 
-    console.log(page)
+    // const [page, setPage] = useState('') 
+    console.log(props)
 
     return (
         <>
@@ -22,14 +22,14 @@ function theAnswer(){
                         <div className="navbar-nav">
                             <div className="row justify-content-center">
                                 <div className="col-sm-12 col-md-3">
-                                    <button className="btn text-light" onClick={() => page ('home') && console.log('working')}>Home</button>
+                                    <button className="btn text-light" onClick={() => page('home') && console.log('working')}>Home</button>
                                 </div>
                                 <div className="col-sm-12 col-md-3">
-                                <button className="btn text-light" onClick={() => setPage('menu')}>Menu</button>
+                                <button className="btn text-light" onClick={() => page('menu')}>Menu</button>
 
                                 </div>
                                 <div className="col-sm-12 col-md-3">
-                                <button className="btn text-light" onClick={() => setPage('about')}>About</button>
+                                <button className="btn text-light" onClick={() => page('about')}>About</button>
 
                                 </div>
 
