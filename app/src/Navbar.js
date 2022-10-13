@@ -1,8 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 
 function Navbar(props){
-let page = props.page
+// let page = props.page
 
 // function theAnswer(){
 //     page('')
@@ -22,14 +22,14 @@ let page = props.page
                         <div className="navbar-nav">
                             <div className="row justify-content-center">
                                 <div className="col-sm-12 col-md-3">
-                                    <button className="btn text-light" onClick={() => page('home') && console.log('working')}>Home</button>
+                                    <button className="btn text-light" onClick={() => props.page('home') && console.log('working')}>Home</button>
                                 </div>
                                 <div className="col-sm-12 col-md-3">
-                                <button className="btn text-light" onClick={() => page('menu')}>Menu</button>
+                                <button className="btn text-light" onClick={() => props.page('menu')}>Menu</button>
 
                                 </div>
                                 <div className="col-sm-12 col-md-3">
-                                <button className="btn text-light" onClick={() => page('about')}>About</button>
+                                <button className="btn text-light" onClick={() => props.page('about')}>About</button>
 
                                 </div>
 
