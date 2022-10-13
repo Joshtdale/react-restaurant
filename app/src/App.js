@@ -47,9 +47,9 @@ function App() {
     const [page, setPage] = useState('home')
     return (
         <>
-            <Navbar />
+            <Navbar page={setPage}/>
             {page == 'home' && <Home />}
-            {page == 'menu' && <Menu />}
+            {page == 'menu' && <Menu data={data}/>}
             {page == 'third home' && <h1>3rd HOME</h1>}
             <button onClick={() => setPage('menu')}>CLICK</button>
             {/* {GetData()} */}

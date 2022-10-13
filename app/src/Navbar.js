@@ -1,9 +1,20 @@
-function Navbar(){
+// import { useState } from "react";
+
+
+function Navbar(props){
+// let page = props.page
+
+// function theAnswer(){
+//     page('')
+// }
+
+    // const [page, setPage] = useState('') 
+    console.log(props)
+
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-dark">
                 <div className="container-fluid">
-                    {/* <a className="navbar-brand" href="#">Navbar</a> */}
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -11,13 +22,15 @@ function Navbar(){
                         <div className="navbar-nav">
                             <div className="row justify-content-center">
                                 <div className="col-sm-12 col-md-3">
-                                    <a className="nav-link active text-light" aria-current="page" href="#">Home</a>
+                                    <button className="btn text-light" onClick={() => props.page('home') && console.log('working')}>Home</button>
                                 </div>
                                 <div className="col-sm-12 col-md-3">
-                                <a className="nav-link text-light" href="#">Menu</a>
+                                <button className="btn text-light" onClick={() => props.page('menu')}>Menu</button>
+
                                 </div>
                                 <div className="col-sm-12 col-md-3">
-                                <a className="nav-link text-light" href="#">About</a>
+                                <button className="btn text-light" onClick={() => props.page('about')}>About</button>
+
                                 </div>
 
                             </div>

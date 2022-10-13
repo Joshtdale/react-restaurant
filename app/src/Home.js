@@ -1,6 +1,7 @@
 
 function Home() {
     return (
+        <>
         <div className="homeJumbotron">
             <div className="jumbotron jumbotron-fluid">
                 <div className="container">
@@ -9,6 +10,14 @@ function Home() {
                 </div>
             </div>
         </div>
+
+        <div className="row">
+            <div className="col text-center">
+                <h3>Specials</h3>
+            </div>
+        </div>
+
+        </>
     )
 }
 

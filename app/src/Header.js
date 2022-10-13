@@ -2,7 +2,7 @@ function Header(){
     return (
         <>
         <div className="header text-center">
-            <h1>Big bubba</h1>
+            <h1>Secret Sauce</h1>
         </div>
         </>
     )
