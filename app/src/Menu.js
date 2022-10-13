@@ -1,4 +1,6 @@
 import { useState } from "react"
+import Appetizers from "./Appetizers"
+import Lunch from "./Lunch"
 
 function Menu(props){
 
@@ -12,26 +14,6 @@ function Menu(props){
     {console.log(dinner)}
     {console.log(dessert)}
     
-    function Apps(){
-        return (
-            <ul>
-            <li>apps</li>
-            <li>More food</li>
-            <li>Also food</li>
-        </ul>
-        )
-    }
-    
-    function Lunch(){
-        return (
-            <ul>
-            <li>lunch</li>
-            <li>More food</li>
-            <li>Also food</li>
-        </ul>
-        )
-    }
-    
     
     const [menuItem, setMenu] = useState('apps')
     
@@ -43,8 +25,9 @@ function Menu(props){
                 <button onClick={() => setMenu('dinner')}>Dinner</button>
                 <button onClick={() => setMenu('drinks')}>Drinks</button>
 
-                {menuItem == 'lunch' && <Lunch />}
-                {menuItem == 'apps' && <Apps />}
+                {menuItem == 'lunch' && <Lunch lunch={lunch}/>}
+                {menuItem == 'apps' && <Appetizers />}
+
                 {/* <h1>{props.data[0].price}</h1> */}
                 {console.log(props.data)}
             </>

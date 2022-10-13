@@ -9,7 +9,7 @@ function Navbar(props) {
     // }
 
     // const [page, setPage] = useState('') 
-    console.log(props)
+    // console.log(props)
 
     return (
         <>
