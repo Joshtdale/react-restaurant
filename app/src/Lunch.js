@@ -1,15 +1,16 @@
 function Lunch(props){
-    {console.log(props.lunch[0])}
+    // let lunch = props.lunch.map((e) => {
+    //     return ()
+    // })
+    // {console.log(lunch)}
 
-    // props.lunch.map
 
-    return (
-        <ul>
-        <li>lunch</li>
-        <li>More food</li>
-        <li>{props.lunch[0].title}</li>
-    </ul>
-    )
+
+    // return (
+    //     <ul>
+    //     <li>{lunch}</li>
+    //     </ul>
+    // )
 }
 
 export default Lunch
