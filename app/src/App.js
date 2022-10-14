@@ -32,7 +32,7 @@ function App() {
         return (
             <>
                 {/* <div className='stupidContainer'></div> */}
-                <Navbar className="navbarMargin" page={setPage} />
+                <Navbar page={setPage} />
                 {page == 'home' && <Home />}
                 {page == 'menu' && <Menu data={data} />}
                 {/* <button onClick={() => setPage('menu')}>CLICK</button> */}

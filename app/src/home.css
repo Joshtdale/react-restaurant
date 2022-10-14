@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-size: 105%;
+    /* background-size: 105%; */
 }
 
 .specials {
@@ -40,4 +40,12 @@ body {
 
 .logo {
     height: 10vh;
+}
+
+.row  {
+    margin-left: calc(0 * var(--bs-gutter-x));
+}
+
+.menuRow {
+    width: 100vw;
 }
