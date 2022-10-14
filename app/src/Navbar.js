@@ -21,7 +21,7 @@ function Navbar(props) {
                     </button>
                     <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <div className="row justify-content-center">
+                            <div className="row justify-content-center navRow">
                                 <div className="col-sm-12 col-md-3 text-center">
                                     <button className="btn" onClick={() => props.page('home')}>Home</button>
                                 </div>
