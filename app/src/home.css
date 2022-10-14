@@ -14,7 +14,11 @@
 .headFont {
     font-family: 'Crimson Text', serif;
 }
-/* 
+
 body {
     font-family: 'Lato', sans-serif;
-} */
+} 
+
+.card {
+    height: 25vh;
+}

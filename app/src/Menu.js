@@ -18,7 +18,7 @@ function Menu(props) {
         <>
             <div className="row">
                 <div className="col text-center">
-                    <h1>Menu</h1>
+                    <h1 className="headFont">Menu</h1>
                     <h3>{menuItem}</h3>
                 </div>
             </div>
@@ -49,7 +49,7 @@ function Menu(props) {
                         <>
                             <div className="col-sm-12 col-lg-6">
                                 <div className="card mx-5">
-                                    <div className="card-header">
+                                    <div className="card-header headFont">
                                         {item.title}
                                     </div>
                                     <div className="card-body overflow-auto">
