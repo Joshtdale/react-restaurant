@@ -23,7 +23,9 @@ function App() {
     }, []);
     const [page, setPage] = useState('home')
 
-
+// function handleClick(text){
+//     setPage(text)
+// }
 
     if (data.length !== 0) {
 
