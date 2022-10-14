@@ -5,7 +5,7 @@ function Header(){
         <>
             <div className="row">
         <div className="col">
-            <h1 className="header text-center headText">Secret Sauce</h1>
+            <h1 className="header text-center headFont">Secret Sauce</h1>
         </div>
         </div>
         </>
