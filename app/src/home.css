@@ -1,10 +1,12 @@
 .homeJumbotron {
     height: 70vh;
+    /* width: 100vh; */
     /* background-color: grey; */
     background-image: url('./images/seafoodpalace.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-size: 105%;
 }
 
 .specials {
@@ -17,8 +19,25 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #CDC6BF;
 } 
 
+.navbarStyle {
+    background-color: #CDC6BF !important;
+}
+
 .card {
+    background-color: rgba(255, 255, 255, 0.2);
     height: 25vh;
+}
+
+.cardSpacing {
+    margin: 10vh 100vh 5vh 100vh;
+    /* margin-left: 100px; */
+
+}
+
+
+.logo {
+    height: 10vh;
 }
