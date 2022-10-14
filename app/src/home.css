@@ -10,3 +10,11 @@
 .specials {
     height: 80vh;
 }
+
+.headFont {
+    font-family: 'Crimson Text', serif;
+}
+/* 
+body {
+    font-family: 'Lato', sans-serif;
+} */

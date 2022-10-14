@@ -1,53 +1,76 @@
 import { useState } from "react"
-import Appetizers from "./Appetizers"
-import Lunch from "./Lunch"
+// import Appetizers from "./Appetizers"
+// import Lunch from "./Lunch"
 
-function Menu(props){
+function Menu(props) {
 
-    const [menuItem, setMenu] = useState('Appetizers')
+    const [menuItem, setMenu] = useState('Appetizer')
     const menuItems = props.data.filter((el) => el.category.title === menuItem)
     // const lunch = props.data.filter((el) => el.category.title === 'Lunch')
     // const dinner = props.data.filter((el) => el.category.title === 'Dinner')
     // const dessert = props.data.filter((el) => el.category.title === 'Dessert')
 
-    
 
-    // console.log(appetizers)
-    // {console.log(lunch)}
-    // {console.log(dinner)}
-    // {console.log(dessert)}
-    // {console.log(menuItem)}
-    
-    
-    
+
+
+
     return (
         <>
-                <h1>Menu</h1>
+            <div className="row">
+                <div className="col text-center">
+                    <h1>Menu</h1>
+                    <h3>{menuItem}</h3>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col">
+                    <button className="btn" data-category='Appetizer' onClick={() => setMenu('Appetizer')}>Appetizers</button>
+                </div>
+                <div className="col">
+                    <button className="btn" data-category='Breakfast' onClick={() => setMenu('Breakfast')}>Breakfast</button>
+                </div>
+                <div className="col">
+                    <button className="btn" data-category='Lunch' onClick={() => setMenu('Lunch')}>Lunch</button>
+                </div>
+                <div className="col">
+                    <button className="btn" data-category='Dinner' onClick={() => setMenu('Dinner')}>Dinner</button>
+                </div>
+                <div className="col">
+                    <button className="btn" data-category='Dessert' onClick={() => setMenu('Dessert')}>Desserts</button>
+                </div>
+                <div className="col">
+                    <button className="btn" data-category='Side' onClick={() => setMenu('Side')}>Sides</button>
+                </div>
+            </div>
 
-                <button onClick={() => setMenu('Appetizer')}>Appetizers</button>
-                <button onClick={() => setMenu('Lunch')}>Lunch</button>
-                <button onClick={() => setMenu('Dinner')}>Dinner</button>
-                <button onClick={() => setMenu('Dessert')}>Desserts</button>
-
+            <div className="row">
                 {menuItems.map((item) => {
                     return (
                         <>
-                        <div>{item.title}</div>
-                        <div>{item.description}</div>
-                        <div>{item.price}</div>
+                            <div className="col-sm-12 col-lg-6">
+                                <div className="card mx-5">
+                                    <div className="card-header">
+                                        {item.title}
+                                    </div>
+                                    <div className="card-body overflow-auto">
+                                        <div>
+                                            <div>{item.description}</div>
+                                            <footer className="opacity-50 m-2 text-end">${Math.round(item.price)}</footer>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </>
 
                     )
                 })
                 }
+            </div>
 
-                {/* {menuItem == 'lunch' && <Lunch lunch={lunch}/>} */}
-                {/* {menuItem == 'apps' && <Appetizers />} */}
-
-                {/* <h1>{props.data[0].price}</h1> */}
-                {/* {console.log(props.data)} */}
-            </>
-        )
+        </>
+    )
 }
 
 export default Menu

@@ -1,8 +1,12 @@
+import './home.css';
+
 function Header(){
     return (
         <>
-        <div className="header text-center">
-            <h1>Secret Sauce</h1>
+            <div className="row">
+        <div className="col">
+            <h1 className="header text-center headText">Secret Sauce</h1>
+        </div>
         </div>
         </>
     )

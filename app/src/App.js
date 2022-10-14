@@ -5,6 +5,7 @@ import axios from "axios";
 import Home from './Home';
 import Menu from './Menu';
 import Navbar from './Navbar';
+import './app.css';
 
 const APIUrl = "https://astute-baton-362318.ue.r.appspot.com/api/json/?format=json"
 
@@ -23,15 +24,15 @@ function App() {
     }, []);
     const [page, setPage] = useState('home')
 
-// function handleClick(text){
-//     setPage(text)
-// }
 
-    if (data.length !== 0) {
+    if (data.length === 0) {
+        return (<h1>Fuck</h1>)
+    } else {
 
         return (
             <>
-                <Navbar page={setPage} />
+                {/* <div className='stupidContainer'></div> */}
+                <Navbar className="navbarMargin" page={setPage} />
                 {page == 'home' && <Home />}
                 {page == 'menu' && <Menu data={data} />}
                 {/* <button onClick={() => setPage('menu')}>CLICK</button> */}
