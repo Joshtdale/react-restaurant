@@ -1,4 +1,5 @@
 // import { useState } from "react";
+import './navbar.css';
 
 
 function Navbar(props) {
@@ -13,23 +14,23 @@ function Navbar(props) {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-dark sticky-top">
+            <nav className="navbar navbar-expand-lg sticky-top bg-light">
                 <div className="container-fluid">
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
                             <div className="row justify-content-center">
-                                <div className="col-sm-12 col-md-3">
-                                    <button className="btn text-light" onClick={() => props.page('home')}>Home</button>
+                                <div className="col-sm-12 col-md-3 text-center">
+                                    <button className="btn" onClick={() => props.page('home')}>Home</button>
                                 </div>
-                                <div className="col-sm-12 col-md-3">
-                                    <button className="btn text-light" onClick={() => props.page('menu')}>Menu</button>
+                                <div className="col-sm-12 col-md-3 text-center">
+                                    <button className="btn" onClick={() => props.page('menu')}>Menu</button>
 
                                 </div>
-                                <div className="col-sm-12 col-md-3">
-                                    <button className="btn text-light" onClick={() => props.page('about')}>About</button>
+                                <div className="col-sm-12 col-md-3 text-center">
+                                    <button className="btn" onClick={() => props.page('about')}>About</button>
 
                                 </div>
 
