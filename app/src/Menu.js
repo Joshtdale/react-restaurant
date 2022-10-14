@@ -22,7 +22,7 @@ function Menu(props) {
                     <h3>{menuItem}</h3>
                 </div>
             </div>
-            <div className="row">
+            <div className="row text-center">
                 <div className="col">
                     <button className="btn" data-category='Appetizer' onClick={() => setMenu('Appetizer')}>Appetizers</button>
                 </div>
@@ -43,7 +43,7 @@ function Menu(props) {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row menuRow">
                 {menuItems.map((item) => {
                     return (
                         <>
