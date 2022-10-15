@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import Header from './Header';
 import './home.css';
 import './style.css';
+import Footer from './Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
   <div className='background'>
     <Header />
     <App />
+    <Footer />
   </div>
   /* </React.StrictMode> */
 );
