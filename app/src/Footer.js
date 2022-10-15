@@ -4,7 +4,7 @@ function Footer() {
     <div className="container footerContainer justify-content-center">
         <div className="row footerRow">
             <div className="col">
-        <footer className="d-flex flex-wrap justify-content-between align-items-center border-top">
+        <footer className="d-flex flex-wrap justify-content-between align-items-center border-top footerBottom">
             <div className="col-md-4 align-items-center">
                 <a href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
                     {/* <svg className="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg> */}
