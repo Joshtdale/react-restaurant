@@ -19,7 +19,7 @@ function Navbar(props) {
                     <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div className="collapse navbar-collapse justify-content-center navRow" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
                             <div className="row justify-content-center navRow">
                                 <div className="col-sm-12 col-md-3 text-center">

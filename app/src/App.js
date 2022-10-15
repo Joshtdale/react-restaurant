@@ -15,10 +15,8 @@ function App() {
     useEffect(() => {
         async function getData() {
             const response = await axios.get(APIUrl)
-            // .then((response) => {
             setData(response.data);
             console.log(response.data);
-            // });
         }
         getData()
     }, []);
@@ -35,11 +33,6 @@ function App() {
                 <Navbar page={setPage} />
                 {page == 'home' && <Home />}
                 {page == 'menu' && <Menu data={data} />}
-                {/* <button onClick={() => setPage('menu')}>CLICK</button> */}
-                {/* {GetData()} */}
-                {/* {console.log(data[0].title)} */}
-                {/* <h1>{data[0].title}</h1> */}
-
             </>
         )
     }

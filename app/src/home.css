@@ -1,5 +1,14 @@
+
+/* ///////Fonts///////// */
+/* font-family: 'Allura', cursive;
+font-family: 'Crimson Text', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Cinzel', serif; */
+
+
 .homeJumbotron {
-    height: 70vh;
+    height: 75vh;
     /* width: 100vh; */
     /* background-color: grey; */
     background-image: url('./images/seafoodpalace.png');
@@ -14,7 +23,10 @@
 }
 
 .headFont {
-    font-family: 'Crimson Text', serif;
+    /* font-family: 'Crimson Text', serif; */
+    /* font-family: 'Allura', cursive; */
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Cinzel', serif;
 }
 
 body {
@@ -40,12 +52,50 @@ body {
 
 .logo {
     height: 10vh;
+    opacity: 0.8;
 }
 
 .row  {
     margin-left: calc(0 * var(--bs-gutter-x));
 }
 
+.container, .container-fluid,
+.container-lg, .container-md, 
+.container-sm, .container-xl, 
+.container-xxl {
+    -bs-gutter-x: 0;
+}
+
 .menuRow {
+    width: 100vw;
+}
+
+.header {
+    margin-left: 10vh;
+    font-size: 8vh;
+}
+
+.fa {
+    text-decoration: none;
+    font-size: 3vh;
+    margin-right: 5vw;
+}
+
+footer {
+    position: fixed;
+    /* height: 100px; */
+    background-color: #CDC6BF;
+    bottom: 0;
+    left: 0vw;
+    width: 100vw;
+    height: 10vh;
+}
+
+.footerRow {
+    width: 100vw;
+    background-color: #CDC6BF;
+}
+
+.footerContainer {
     width: 100vw;
 }
