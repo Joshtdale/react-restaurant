@@ -81,7 +81,7 @@ body {
     margin-right: 5vw;
 }
 
-footer {
+.footerBottom {
     position: fixed;
     /* height: 100px; */
     background-color: #CDC6BF;
@@ -98,4 +98,32 @@ footer {
 
 .footerContainer {
     width: 100vw;
+}
+
+.cardContainer:hover .card{
+transform: rotateY(180deg);
+/* transition-duration: 1500ms; */
+perspective: 1000px;
+}
+
+.card {
+    position: relative;
+    transition: all 0.5s linear;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    position: absolute;
+}
+
+.front {
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back {
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
 }

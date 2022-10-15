@@ -47,17 +47,19 @@ function Menu(props) {
                 {menuItems.map((item) => {
                     return (
                         <>
-                            <div className="col-sm-12 col-lg-6">
+                            <div className="col-sm-12 col-lg-6 cardContainer">
                                 <div className="card mx-5 cardSpacing">
+                                    <div className="front">
                                     <div className="card-header headFont">
                                         {item.title}
                                     </div>
                                     <div className="card-body overflow-auto">
                                         <div>
-                                            <div>{item.description}</div>
                                             <footer className="opacity-50 m-2 text-end">${Math.round(item.price)}</footer>
                                         </div>
+                                        </div>
                                     </div>
+                                            <div className="back">{item.description}</div>
                                 </div>
                             </div>
 
