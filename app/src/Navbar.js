@@ -33,6 +33,10 @@ function Navbar(props) {
                                     <button className="btn" onClick={() => props.page('about')}>About</button>
 
                                 </div>
+                                <div className="col-sm-12 col-md-3 text-center">
+                                    <button className="btn" onClick={() => props.page('cart')}>Cart</button>
+
+                                </div>
 
                             </div>
                         </div>

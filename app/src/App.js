@@ -4,10 +4,14 @@ import React from 'react';
 import axios from "axios";
 import Home from './Home';
 import Menu from './Menu';
+import Cart from './Cart';
 import Navbar from './Navbar';
 import './app.css';
 
 const APIUrl = "https://astute-baton-362318.ue.r.appspot.com/api/json/?format=json"
+
+const cart = []
+const price = []
 
 
 function App() {
@@ -20,10 +24,11 @@ function App() {
         }
         getData()
     }, []);
+
     const [page, setPage] = useState('home')
 
-    let cart = []
-console.log(cart)
+    console.log(cart)
+    // console.log(price)
 
     if (data.length === 0) {
         return (<h1>Fuck</h1>)
@@ -34,7 +39,8 @@ console.log(cart)
                 {/* <div className='stupidContainer'></div> */}
                 <Navbar page={setPage} />
                 {page == 'home' && <Home />}
-                {page == 'menu' && <Menu data={data} cart={cart}/>}
+                {page == 'menu' && <Menu data={data} cart={cart} price={price}/>}
+                {page == 'cart' && <Cart cart={cart} price={price}/>}
             </>
         )
     }
