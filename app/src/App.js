@@ -11,7 +11,9 @@ import './app.css';
 const APIUrl = "https://astute-baton-362318.ue.r.appspot.com/api/json/?format=json"
 
 const cart = []
+const price = []
 console.log(cart)
+console.log(price)
 
 function App() {
     const [data, setData] = useState([]);
@@ -38,7 +40,7 @@ function App() {
                 <Navbar page={setPage} />
                 {page == 'home' && <Home />}
                 {page == 'menu' && <Menu data={data} cart={cart}/>}
-                {page == 'cart' && <Cart cart={cart}/>}
+                {page == 'cart' && <Cart cart={cart} price={price}/>}
             </>
         )
     }

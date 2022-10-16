@@ -60,7 +60,7 @@ function Menu(props) {
                                         </div>
                                     </div>
                                             <div className="back overflow-auto m-4">{item.description}
-                                            <button className="btn btn-secondary" onClick={() => props.cart.push(item.title) && console.log(props.cart)}>Add to cart</button>
+                                            <button className="btn btn-secondary" onClick={() => props.cart.push(item.title)}>Add to cart</button>
                                             </div>
                                 </div>
                             </div>

@@ -11,22 +11,29 @@ function Cart(props) {
         <>
             <div className="row justify-content-center">
                 <div className="col-8">
-                    {props.cart.map((item) => {
+                    <div className="card">
+                        {props.cart.map((item) => {
 
-                        return (
-                            <>
-                                <div className="card">
+                            return (
+                                <>
                                     <div className="row">
                                         <div className="col">
                                             <h3>{item}</h3>
                                         </div>
                                     </div>
-                                </div>
-                            </>
+                                </>
 
-                        )
-                    })
-                    }
+                            )
+                        })
+                        }
+                    </div>
+                </div>
+            </div>
+            <div className="container">
+                <div className="row">
+                    <div className="col text-end m-5">
+                        Total: $
+                    </div>
                 </div>
             </div>
         </>
