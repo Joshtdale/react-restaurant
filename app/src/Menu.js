@@ -70,12 +70,8 @@ function Menu(props) {
                                         <div className="col">
 
                                     <div className="overflow-auto m-4 fs-6 h-50 mb-0">{item.description}</div>
-                                                <button className="btn btn-secondary" onClick={() => setCart(item.title, Math.round(item.price))}>Add to cart</button>
+                                                <button className="btn btn-secondary m-1" onClick={() => setCart(item.title, Math.round(item.price))}>Add to cart</button>
                                         </div>
-                                        {/* <div className="row">
-                                            <div className="col">
-                                            </div>
-                                    </div> */}
                                         </div>
                                 </div>
                             </div>
