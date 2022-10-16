@@ -6,12 +6,26 @@ function Cart(props) {
     // const stored = JSON.parse(localStorage.getItem('shoppingCart'));
     // console.log(stored)
 
+    // let numArray = []
+
+    // props.price.forEach(str => {
+    //     numArray.push(Number(str));
+    // });
+    // console.log(numArray)
+
+    const total = props.price.reduce((accumulator, value) => {
+        return accumulator + value;
+    }, 0);
+
+    // console.log(total);
+
+    // console.log(props.price)
 
     return (
         <>
-            <div className="row justify-content-center">
+            <div className="row justify-content-center mt-3">
                 <div className="col-8">
-                    <div className="card">
+                    <div className="card overflow-auto">
                         {props.cart.map((item) => {
 
                             return (
@@ -32,7 +46,8 @@ function Cart(props) {
             <div className="container">
                 <div className="row">
                     <div className="col text-end m-5">
-                        Total: $
+                    <button className="btn btn-secondary m-2 mt-1">Checkout</button>
+                    Total: ${total}.00
                     </div>
                 </div>
             </div>

@@ -12,8 +12,7 @@ const APIUrl = "https://astute-baton-362318.ue.r.appspot.com/api/json/?format=js
 
 const cart = []
 const price = []
-console.log(cart)
-console.log(price)
+
 
 function App() {
     const [data, setData] = useState([]);
@@ -28,7 +27,8 @@ function App() {
 
     const [page, setPage] = useState('home')
 
-
+    console.log(cart)
+    // console.log(price)
 
     if (data.length === 0) {
         return (<h1>Fuck</h1>)
@@ -39,7 +39,7 @@ function App() {
                 {/* <div className='stupidContainer'></div> */}
                 <Navbar page={setPage} />
                 {page == 'home' && <Home />}
-                {page == 'menu' && <Menu data={data} cart={cart}/>}
+                {page == 'menu' && <Menu data={data} cart={cart} price={price}/>}
                 {page == 'cart' && <Cart cart={cart} price={price}/>}
             </>
         )

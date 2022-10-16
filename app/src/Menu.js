@@ -12,7 +12,14 @@ function Menu(props) {
     
     // let menuCart = []
     
-    console.log(props)
+    // console.log(props.price) 
+
+    function setCart(itemName, itemPrice) {
+        props.cart.push(itemName + ' $' + itemPrice)
+        props.price.push(itemPrice)
+        // console.log(itemName)
+        // console.log(itemPrice)
+    }
     
     return (
         <>
@@ -60,7 +67,7 @@ function Menu(props) {
                                         </div>
                                     </div>
                                             <div className="back overflow-auto m-4">{item.description}
-                                            <button className="btn btn-secondary" onClick={() => props.cart.push(item.title)}>Add to cart</button>
+                                            <button className="btn btn-secondary" onClick={() => setCart(item.title, Math.round(item.price))}>Add to cart</button>
                                             </div>
                                 </div>
                             </div>
