@@ -102,28 +102,34 @@ body {
 
 .cardContainer:hover .card{
 transform: rotateY(180deg);
-/* transition-duration: 1500ms; */
-perspective: 1000px;
+transition-duration: 1000ms;
 }
 
 .card {
     position: relative;
-    transition: all 0.5s linear;
+    /* transition: all 0.5s linear; */
     transform-style: preserve-3d;
 }
 
 .front,
 .back {
     position: absolute;
+    perspective: 1000px;
 }
 
 .front {
     z-index: 2;
     backface-visibility: hidden;
+    width: 100%;
 }
 
 .back {
     z-index: 1;
     transform: rotateY(180deg);
     backface-visibility: hidden;
+    height: 70%;
+}
+
+.card-header {
+    width: 100%;
 }
