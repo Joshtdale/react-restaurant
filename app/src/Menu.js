@@ -9,11 +9,11 @@ function Menu(props) {
     // const lunch = props.data.filter((el) => el.category.title === 'Lunch')
     // const dinner = props.data.filter((el) => el.category.title === 'Dinner')
     // const dessert = props.data.filter((el) => el.category.title === 'Dessert')
-
-
-
-
-
+    
+    // let menuCart = []
+    
+    console.log(props)
+    
     return (
         <>
             <div className="row">
@@ -59,7 +59,9 @@ function Menu(props) {
                                         </div>
                                         </div>
                                     </div>
-                                            <div className="back">{item.description}</div>
+                                            <div className="back overflow-auto m-4">{item.description}
+                                            <button className="btn btn-secondary" onClick={() => console.log(item.title) && props.cart.push(item.title)}>Add to cart</button>
+                                            </div>
                                 </div>
                             </div>
 

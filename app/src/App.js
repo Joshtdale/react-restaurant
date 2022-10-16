@@ -22,6 +22,8 @@ function App() {
     }, []);
     const [page, setPage] = useState('home')
 
+    let cart = []
+console.log(cart)
 
     if (data.length === 0) {
         return (<h1>Fuck</h1>)
@@ -32,7 +34,7 @@ function App() {
                 {/* <div className='stupidContainer'></div> */}
                 <Navbar page={setPage} />
                 {page == 'home' && <Home />}
-                {page == 'menu' && <Menu data={data} />}
+                {page == 'menu' && <Menu data={data} cart={cart}/>}
             </>
         )
     }
