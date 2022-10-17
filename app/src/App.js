@@ -21,14 +21,14 @@ function App() {
         async function getData() {
             const response = await axios.get(APIUrl)
             setData(response.data);
-            console.log(response.data);
+            // console.log(response.data);
         }
         getData()
     }, []);
 
     const [page, setPage] = useState('home')
 
-    console.log(cart)
+    // console.log(cart)
     // console.log(price)
 
     if (data.length === 0) {
@@ -41,7 +41,6 @@ function App() {
 
         return (
             <>
-                {/* <div className='stupidContainer'></div> */}
                 <Navbar page={setPage} />
                 {page == 'home' && <Home data={data}/>}
                 {page == 'menu' && <Menu data={data} cart={cart} price={price}/>}

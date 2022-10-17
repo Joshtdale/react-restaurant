@@ -34,7 +34,7 @@ function Navbar(props) {
 
                                 </div>
                                 <div className="col-sm-12 col-md-3 text-center">
-                                    <button className="btn fa-solid fa-cart-shopping" onClick={() => props.page('cart')}><a className="text-muted fa fa-cart-shopping" href="#"></a></button>
+                                    <button className="btn border border-dark" onClick={() => props.page('cart')}><a className="text-muted fa fa-cart-shopping" href="#"></a></button>
 
                                 </div>
 
