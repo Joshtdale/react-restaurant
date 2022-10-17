@@ -1,9 +1,11 @@
+import image from './images/IMG_6818.jpg'
+
 function About() {
     return (
-        <div className="container text-center">
+        <div className="containerImage text-center">
             <div className="row m-5">
                 <div className="col">
-                    <img scr="./images/IMG_6818.jpg"></img>
+                    <img className="img2" src={image}></img>
                 </div>
                 <div className="col">
                     <p>My dad puts mustard on his tacos and calls it "secret sauce."</p>

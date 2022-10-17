@@ -167,3 +167,15 @@ transition-duration: 1000ms;
 .specialsCard3 {
     background-image: url('./images/ham-cheese.jpeg');
 }
+
+.imageCol {
+    width: 50vw;
+}
+
+.containerImage {
+    height: 100vh;
+}
+
+.img2 {
+    width: 200px;
+}
