@@ -5,6 +5,7 @@ import axios from "axios";
 import Home from './Home';
 import Menu from './Menu';
 import Cart from './Cart';
+import About from './About';
 import Navbar from './Navbar';
 import './app.css';
 
@@ -31,7 +32,11 @@ function App() {
     // console.log(price)
 
     if (data.length === 0) {
-        return (<h1>Fuck</h1>)
+        return (
+            <div className="container text-center">
+        <h1>Loading please wait...</h1>
+        </div>
+        )
     } else {
 
         return (
@@ -41,6 +46,7 @@ function App() {
                 {page == 'home' && <Home data={data}/>}
                 {page == 'menu' && <Menu data={data} cart={cart} price={price}/>}
                 {page == 'cart' && <Cart cart={cart} price={price}/>}
+                {page == 'about' && <About/>}
             </>
         )
     }
