@@ -11,9 +11,13 @@ function Footer() {
                 </a>
                 {/* <span className="m-4 mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span> */}
                 {/* <br></br> */}
-                <div className="text-center">725 National Ave<br></br>
-                    Lexington, KY 40502</div>
+                <div className="text-center text-muted mb-4">
+                    725 National Ave<br></br>
+                    Lexington, KY 40502<br></br>
+                    Mon-Fri 11-11
+                    </div>
             </div>
+            
 
             <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li className="ms-3"><a className="text-muted fa fa-twitter" href="#"></a></li>

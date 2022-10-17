@@ -55,7 +55,7 @@ function Menu(props) {
                     return (
                         <>
                             <div className="col-sm-12 col-lg-6 cardContainer">
-                                <div className="card mx-5 cardSpacing">
+                                <div className="card menuCards mx-5 cardSpacing">
                                     <div className="front">
                                         <div className="card-header headFont">
                                             {item.title}

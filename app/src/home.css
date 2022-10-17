@@ -18,9 +18,9 @@ font-family: 'Cinzel', serif; */
     /* background-size: 105%; */
 }
 
-.specials {
+/* .specials {
     height: 80vh;
-}
+} */
 
 .headFont {
     /* font-family: 'Crimson Text', serif; */
@@ -32,15 +32,20 @@ font-family: 'Cinzel', serif; */
 body {
     font-family: 'Lato', sans-serif;
     background-color: #CDC6BF;
+    height: 400vh;
 } 
 
 .navbarStyle {
     background-color: #CDC6BF !important;
 }
 
+.menuCards {
+    height: 25vh;
+
+}
+
 .card {
     background-color: rgba(255, 255, 255, 0.2);
-    height: 25vh;
 }
 
 .cardSpacing {
@@ -88,7 +93,7 @@ body {
     bottom: 0;
     left: 0vw;
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
 }
 
 .footerRow {
@@ -132,4 +137,33 @@ transition-duration: 1000ms;
 
 .card-header {
     width: 100%;
+}
+
+.mapsCard {
+    height: 30vh;
+
+}
+
+.specialsCard {
+    background-size: cover;
+    background-position: center;
+    color: black;
+    opacity: 0.6;
+    /* z-index: 1; */
+}
+
+/* .titleCard {
+    z-index: 2;
+} */
+
+.specialsCard1 {
+    background-image: url('./images/brisket.jpg');
+}
+
+.specialsCard2 {
+    background-image: url('./images/cali-roll.jpg');
+}
+
+.specialsCard3 {
+    background-image: url('./images/ham-cheese.jpeg');
 }
