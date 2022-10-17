@@ -38,7 +38,7 @@ function App() {
             <>
                 {/* <div className='stupidContainer'></div> */}
                 <Navbar page={setPage} />
-                {page == 'home' && <Home />}
+                {page == 'home' && <Home data={data}/>}
                 {page == 'menu' && <Menu data={data} cart={cart} price={price}/>}
                 {page == 'cart' && <Cart cart={cart} price={price}/>}
             </>
