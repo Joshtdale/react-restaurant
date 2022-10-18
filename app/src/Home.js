@@ -35,17 +35,17 @@ function Home(props) {
             <div className="row">
                 <div className="col m-3 ">
                     <div className=" card menuCards specialsCard1 specialsCard text-center">
-                        <h3 className="mt-3 fs-1 titleCard card">{props.data[0].title}</h3>
+                        <h3 className="mt-3 fs-1 titleCard card headFont">{props.data[0].title}</h3>
                     </div>
                 </div>
                 <div className="col m-3">
                     <div className=" card menuCards specialsCard2 specialsCard text-center">
-                        <h3 className="mt-3 fs-1 titleCard card">{props.data[7].title}</h3>
+                        <h3 className="mt-3 fs-1 titleCard card headFont">{props.data[7].title}</h3>
                     </div>
                 </div>
                 <div className="col m-3">
                     <div className=" card menuCards specialsCard3 specialsCard text-center">
-                        <h3 className="mt-3 fs-1 titleCard card">{props.data[9].title}</h3>
+                        <h3 className="mt-3 fs-1 titleCard card headFont">{props.data[9].title}</h3>
                     </div>
                 </div>
             </div>

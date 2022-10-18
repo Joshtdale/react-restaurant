@@ -149,12 +149,13 @@ transition-duration: 1000ms;
     background-position: center;
     color: black;
     opacity: 0.6;
-    /* z-index: 1; */
+    z-index: -1;
 }
 
-/* .titleCard {
-    z-index: 2;
-} */
+.titleCard {
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+}
 
 .specialsCard1 {
     background-image: url('./images/brisket.jpg');
