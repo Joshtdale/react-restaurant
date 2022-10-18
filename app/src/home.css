@@ -76,7 +76,7 @@ body {
 }
 
 .header {
-    margin-left: 10vh;
+    /* margin-left: 10vh; */
     font-size: 8vh;
 }
 
@@ -183,3 +183,7 @@ transition-duration: 1000ms;
 /* .fa-cart-shopping {
     height: 3px;
 } */
+
+.shoppingIcon {
+    height: 4vh;
+}

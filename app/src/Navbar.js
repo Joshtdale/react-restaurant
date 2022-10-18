@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import './navbar.css';
+import cartIcon from './images/download.svg';
 
 
 function Navbar(props) {
@@ -34,7 +35,7 @@ function Navbar(props) {
 
                                 </div>
                                 <div className="col-sm-12 col-md-3 text-center">
-                                    <button className="btn border border-dark" onClick={() => props.page('cart')}><a className="text-muted fa fa-cart-shopping" href="#"></a></button>
+                                    <button className="btn" onClick={() => props.page('cart')}><img className="shoppingIcon" src={cartIcon}></img></button>
 
                                 </div>
 
