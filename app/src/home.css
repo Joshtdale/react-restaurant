@@ -137,10 +137,12 @@ transition-duration: 1000ms;
 
 .card-header {
     width: 100%;
+    border-radius: 20px;
 }
 
 .mapsCard {
     height: 30vh;
+    margin-bottom: 25vh;
 
 }
 
@@ -187,4 +189,13 @@ transition-duration: 1000ms;
 
 .shoppingIcon {
     height: 4vh;
+}
+
+button:hover {
+    opacity: 0.4;
+}
+
+.menuNav {
+    margin-left: 7vw;
+    margin-right: 7vw;
 }
