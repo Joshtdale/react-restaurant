@@ -28,7 +28,7 @@ function Home(props) {
             </div>
 
             <div className="row specials">
-                <div className="col text-center">
+                <div className="col text-center m-5">
                     <h3>Specials</h3>
                 </div>
             </div>
