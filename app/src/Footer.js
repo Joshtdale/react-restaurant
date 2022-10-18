@@ -6,12 +6,7 @@ function Footer() {
             <div className="col">
         <footer className="d-flex flex-wrap justify-content-between align-items-center border-top footerBottom">
             <div className="col-md-4 align-items-center">
-                <a href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    {/* <svg className="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg> */}
-                </a>
-                {/* <span className="m-4 mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span> */}
-                {/* <br></br> */}
-                <div className="text-center text-muted mb-4">
+                <div className="text-center text-muted m-4 mb-1">
                     725 National Ave<br></br>
                     Lexington, KY 40502<br></br>
                     Mon-Fri 11-11
