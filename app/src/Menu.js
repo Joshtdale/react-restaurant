@@ -5,7 +5,7 @@ import { useState } from "react"
 function Menu(props) {
 
     const [menuItem, setMenu] = useState('Appetizer')
-    const menuItems = props.data.filter((el) => el.category.title === menuItem)
+    const menuItems = props.data.filter((el) => el.category === menuItem)
     // const lunch = props.data.filter((el) => el.category.title === 'Lunch')
     // const dinner = props.data.filter((el) => el.category.title === 'Dinner')
     // const dessert = props.data.filter((el) => el.category.title === 'Dessert')
@@ -15,8 +15,9 @@ function Menu(props) {
     // console.log(props.price) 
 
     function setCart(itemName, itemPrice) {
-        props.cart.push(itemName + ' $' + itemPrice)
+        // props.cart.push(itemName + ' $' + itemPrice)
         props.price.push(itemPrice)
+        props.setStorage(itemName  + ' $' + itemPrice)
         // console.log(itemName)
         // console.log(itemPrice)
     }
@@ -71,6 +72,7 @@ function Menu(props) {
 
                                     <div className="overflow-auto m-4 fs-6 h-50 mb-0">{item.description}</div>
                                                 <button className="btn btn-secondary m-1" onClick={() => setCart(item.title, Math.round(item.price))}>Add to cart</button>
+                                                
                                         </div>
                                         </div>
                                 </div>

@@ -9,10 +9,12 @@ import About from './About';
 import Navbar from './Navbar';
 import './app.css';
 
-const APIUrl = "https://astute-baton-362318.ue.r.appspot.com/api/json/?format=json"
+const APIUrl = "https://8000-joshtdale-djangosandbox-b3h50sr8ag1.ws-us74.gitpod.io/books/"
 
 const cart = []
 const price = []
+
+
 
 
 function App() {
@@ -20,11 +22,20 @@ function App() {
     useEffect(() => {
         async function getData() {
             const response = await axios.get(APIUrl)
-            setData(response.data);
-            // console.log(response.data);
+            let newResponse = response.data.data
+            setData(newResponse);
+            // console.log(response.data.data[1]);
         }
         getData()
     }, []);
+
+    // const [storage, setStorage] = useState((() => {
+    //     return JSON.parse(localStorage.getItem("list")) || [];
+    // }))
+    
+    // useEffect(() => {
+    //     localStorage.setItem('list', JSON.stringify(storage))
+    // }, [storage]);
 
     const [page, setPage] = useState('home')
 

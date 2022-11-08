@@ -26,7 +26,7 @@ function Cart(props) {
             <div className="row justify-content-center mt-3">
                 <div className="col-8">
                     <div className="card overflow-auto">
-                        {props.cart.map((item) => {
+                        {props.storage.map((item) => {
 
                             return (
                                 <>
