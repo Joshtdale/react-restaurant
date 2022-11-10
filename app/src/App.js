@@ -9,7 +9,7 @@ import About from './About';
 import Navbar from './Navbar';
 import './app.css';
 
-const APIUrl = "https://astute-baton-362318.ue.r.appspot.com/api/json/?format=json"
+const APIUrl = "https://8000-joshtdale-restaurantbac-kzlenc9sh18.ws-us75.gitpod.io/menuitems/"
 
 const cart = []
 const price = []
